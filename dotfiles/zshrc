@@ -112,3 +112,10 @@ alias -s py=vi
 alias -s text=vi
 
 setopt no_nomatch
+
+
+# project
+alias cfpwrg='cd ~/tmp/recommend/feature_parser/user_feature/'
+alias crwrg='cd ~/tmp/recommend/cypher_run/wap_rec_global_cypher_run'
+alias cypher='cd ~/tmp/cypher/src'
+alias cypher_client='cd ~/repo/toolbox'

@@ -1,10 +1,13 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim config
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+colorscheme desert " 配色方案
 set nocompatible   " 去掉有关vi一致性模式，避免以前版本的bug和局限
 set nu!            " 显示行号
-set guifont=Luxi/Mono/9 " 设置字体，字体名称和字号
+set guifont=Courier_new:h14:b:cDEFAULT
+" set guifont=Luxi/Mono/9 " 设置字体，字体名称和字号
 filetype on " 检测文件的类型
+set vb t_vb= " 去除vim命令输入错误时系统发出的响声
 set history=1000 " 记录历史的行数
 set background=dark " 背景使用黑色
 syntax on " 语法高亮显示
@@ -19,6 +22,12 @@ set guioptions-=T " 去除vim的GUI版本中的toolbar
 set ruler " 在编辑过程中，在右上角显示光标位置的状态行
 set nohls " 默认情况下，寻找匹配的高亮度显示，改设置关闭高亮显示
 set incsearch " 在程序中查询一单词，自动匹配单词的位置；如查询desk单词，但输到/d时，会自动找到第一个d开头的单词
+
+" hi String ctermfg=darkred " 修改字符串颜色
+" hi Type ctermfg=yellow " 修改类型颜色
+" hi Number ctermfg=darkblue " 修改数字颜色
+" hi Constant ctermfg=blue "  修改常量颜色
+" hi Statement ctermfg=darkyellow "修改声明颜色
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => bundle config

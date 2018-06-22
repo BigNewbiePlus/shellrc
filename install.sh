@@ -6,12 +6,13 @@ PREFIX_PATH=$(cd `dirname $0`; pwd)
 # install oh my zsh
 if [ ! -d $HOME/.oh-my-zsh/ ]; then
     echo 'there is no oh-my-zsh, now install!'
+    sudo apt-get install -y zsh
     sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 fi
 
-if [ ! -d $HOME/.vim/bundle/vundle ]; then # if not exist bundle
+if [ ! -d $HOME/.vim/bundle/Vundle.vim ]; then # if not exist bundle
     echo 'there is no vundle, now install!'
-    git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
 
 cat $PREFIX_PATH/dotfiles/zshrc > $HOME/.zshrc

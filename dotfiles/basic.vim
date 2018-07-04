@@ -22,6 +22,8 @@ set guioptions-=T " 去除vim的GUI版本中的toolbar
 set ruler " 在编辑过程中，在右上角显示光标位置的状态行
 set nohls " 默认情况下，寻找匹配的高亮度显示，改设置关闭高亮显示
 set incsearch " 在程序中查询一单词，自动匹配单词的位置；如查询desk单词，但输到/d时，会自动找到第一个d开头的单词
+set ts=4 " 设置按TAB产生4个空格
+set expandtab
 
 " hi String ctermfg=darkred " 修改字符串颜色
 " hi Type ctermfg=yellow " 修改类型颜色

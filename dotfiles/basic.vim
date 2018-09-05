@@ -1,14 +1,12 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim config
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" colorscheme desert " 配色方案
 set nocompatible   " 去掉有关vi一致性模式，避免以前版本的bug和局限
 set nu!            " 显示行号
 " set guifont=Courier_new:h14:b:cDEFAULT
 filetype on " 检测文件的类型
 set vb t_vb= " 去除vim命令输入错误时系统发出的响声
 set history=1000 " 记录历史的行数
-" set background=dark " 背景使用黑色
 syntax on " 语法高亮显示
 set autoindent " vim使用自动对齐，也就是把当前行的对齐格式应用到下一行(自动缩进)
 set cindent " (cindent是特别针对C语言语法自动缩进)
@@ -23,10 +21,18 @@ set nohls " 默认情况下，寻找匹配的高亮度显示，改设置关闭�
 set incsearch " 在程序中查询一单词，自动匹配单词的位置；如查询desk单词，但输到/d时，会自动找到第一个d开头的单词
 set ts=4 " 设置按TAB产生4个空格
 set expandtab
+
+colorscheme 0x7A69_dark " 配色方案
+" colorscheme molokai
 set t_Co=256
-color molokai
-let g:molokai_original = 1 " origin monokai background color
+set background=dark " 背景使用黑色
+" let g:molokai_original = 1 " origin monokai background color
 " let g:rehash256 = 1 " bring the 256 color version as close as possible to the the default (dark) GUI version
+
+" let g:solarized_termcolors=256
+" set background=dark
+" colorscheme solarized
+
 let g:airline_theme='luna'
 let g:neocomplete#enable_at_startup = 1
 let g:deoplete#enable_at_startup = 1
@@ -58,7 +64,11 @@ Plugin 'Shougo/neocomplete.vim'
 " plugin on GitHub repo
 " Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'flazz/vim-colorschemes'
+" Plugin 'morhetz/gruvbox'
+" Plugin 'lifepillar/vim-solarized8'
+" Plugin 'altercation/vim-colors-solarized'
+" Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 " plugin from http://vim-scripts.org/vim/scripts.html
